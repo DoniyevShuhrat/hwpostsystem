@@ -61,7 +61,7 @@ namespace HWPostSystem.CustomControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/HWPostSystem;V1.0.0.0;component/customcontrols/bindablepasswordbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/HWPostSystem;component/customcontrols/bindablepasswordbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\CustomControls\BindablePasswordBox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

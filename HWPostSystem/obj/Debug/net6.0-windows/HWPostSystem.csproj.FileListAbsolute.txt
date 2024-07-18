@@ -71,3 +71,4 @@ F:\Code\C#\WPF_C#_Projects\MVVMProjects\HWPostSystem\HWPostSystem\bin\Debug\net6
 F:\Code\C#\WPF_C#_Projects\MVVMProjects\HWPostSystem\HWPostSystem\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 F:\Code\C#\WPF_C#_Projects\MVVMProjects\HWPostSystem\HWPostSystem\obj\Debug\net6.0-windows\HWPostSystem.csproj.AssemblyReference.cache
 F:\Code\C#\WPF_C#_Projects\MVVMProjects\HWPostSystem\HWPostSystem\obj\Debug\net6.0-windows\HWPostSy.34403110.Up2Date
+F:\Code\C#\WPF_C#_Projects\MVVMProjects\HWPostSystem\HWPostSystem\obj\Debug\net6.0-windows\HWPostSystem.sourcelink.json
