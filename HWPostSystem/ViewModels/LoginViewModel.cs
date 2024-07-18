@@ -11,12 +11,25 @@ namespace HWPostSystem.ViewModels
     public class LoginViewModel : ViewModelBase
     {
         // Fields
+        private string _companyCode;
         private string _username;
         private SecureString _password;
         private string _errorMessage;
         private bool _isViewVisible = true;
 
         // Properties
+        public string CompanyCode
+        {
+            get
+            {
+                return _companyCode;
+            }
+            set
+            {
+                _companyCode = value;
+                OnPropertyChanged(nameof(CompanyCode));
+            }
+        }
         public string Username
         {
             get
@@ -73,7 +86,7 @@ namespace HWPostSystem.ViewModels
         {
             bool validData;
             if (string.IsNullOrWhiteSpace(Username) || Username.Length < 3 ||
-                Password == null || Password.Length < 3)
+                Password == null || Password.Length < 3 || CompanyCode == null || CompanyCode.Length < 2)
                 validData = false;
             else
                 validData = true;

@@ -199,7 +199,7 @@
                                     FontSize="13"
                                     FontWeight="Medium"
                                     Foreground="Black"
-                                    Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}">
+                                    Text="{Binding CompanyCode, UpdateSourceTrigger=PropertyChanged}">
 
                                     <TextBox.Background>
                                         <ImageBrush
@@ -229,7 +229,8 @@
                                     FontFamily="Montserrat"
                                     FontSize="13"
                                     FontWeight="Medium"
-                                    Foreground="Black">
+                                    Foreground="Black"
+                                    Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}">
 
                                     <TextBox.Background>
                                         <ImageBrush

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HWPostSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fe1b7e9b521ea5eb7beeddda269d5ac20b39c91")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+273487351dc968ac4d09c9618e9016165799e8d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("HWPostSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HWPostSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
