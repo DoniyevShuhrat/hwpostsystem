@@ -262,42 +262,6 @@
                                     Text="{Binding ErrorMessage}"
                                     TextWrapping="Wrap" />
 
-                                <Button
-                                    x:Name="btnLogin"
-                                    Margin="0,20,0,0"
-                                    BorderThickness="0"
-                                    Command="{Binding LoginCommand}"
-                                    Content="Kirish"
-                                    Cursor="Hand"
-                                    FontFamily="Montserrat"
-                                    FontSize="12"
-                                    FontWeight="Bold"
-                                    Foreground="White">
-
-                                    <Button.Style>
-                                        <Style TargetType="Button">
-                                            <Setter Property="Background" Value="#462AD8" />
-                                            <Style.Triggers>
-                                                <Trigger Property="IsMouseOver" Value="True">
-                                                    <Setter Property="Background" Value="#28AEED" />
-                                                </Trigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </Button.Style>
-
-                                    <Button.Template>
-                                        <ControlTemplate TargetType="Button">
-                                            <Border
-                                                Width="150"
-                                                Height="40"
-                                                Background="{TemplateBinding Background}"
-                                                CornerRadius="20">
-                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Button.Template>
-                                </Button>
-
                                 <StackPanel
                                     Margin="0,15,0,0"
                                     HorizontalAlignment="Center"
@@ -320,6 +284,40 @@
                                         Text="Parolni tiklash" />
 
                                 </StackPanel>
+                                <Button
+                                    x:Name="btnLogin"
+                                    BorderThickness="0"
+                                    Command="{Binding LoginCommand}"
+                                    Content="Kirish"
+                                    Cursor="Hand"
+                                    FontFamily="Montserrat"
+                                    FontSize="12"
+                                    FontWeight="Bold"
+                                    Foreground="White">
+
+                                    <Button.Style>
+                                        <Style TargetType="{x:Type Button}">
+                                            <Setter Property="Background" Value="#462AD8" />
+                                            <Style.Triggers>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Background" Value="#28AEED" />
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border
+                                                Width="150"
+                                                Height="40"
+                                                Background="{TemplateBinding Background}"
+                                                CornerRadius="20">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
 
                             </StackPanel>
                         </Grid>

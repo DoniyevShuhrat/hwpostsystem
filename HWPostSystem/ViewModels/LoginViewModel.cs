@@ -1,9 +1,12 @@
-﻿using System;
+﻿using HWPostSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace HWPostSystem.ViewModels
@@ -87,15 +90,32 @@ namespace HWPostSystem.ViewModels
             bool validData;
             if (string.IsNullOrWhiteSpace(Username) || Username.Length < 3 ||
                 Password == null || Password.Length < 3 || CompanyCode == null || CompanyCode.Length < 2)
+            {
                 validData = false;
+            }
             else
                 validData = true;
             return validData;
         }
 
-        private void ExecuteLoginCommand(object obj)
+        private async void ExecuteLoginCommand(object obj)
         {
-            throw new NotImplementedException();
+            ApiServices apiServices = new ApiServices();
+            var isValidUser = await apiServices.CheckLoginAsync(123, "Shuhrat", "123");
+            //var isValidUser = await apiServices.CheckLoginAsync(20241, "test", "@#4050302Bb");
+            MessageBox.Show(isValidUser.ToString(), "Response:");
+            if (isValidUser || true)
+            {
+                Thread.CurrentPrincipal = new GenericPrincipal(
+                    new GenericIdentity(Username), null);
+                IsViewVisible = false;
+            }
+            else
+            {
+                ErrorMessage = "* Invalid username or password";
+            }
+            //var value = await apiServices.CheckLoginAsync(123, "Shuhrat", "");
+            //throw new NotImplementedException();
         }
 
         private void ExecuteRecoverPassCommand(string username, string email)
