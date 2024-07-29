@@ -101,10 +101,10 @@ namespace HWPostSystem.ViewModels
         private async void ExecuteLoginCommand(object obj)
         {
             ApiServices apiServices = new ApiServices();
-            var isValidUser = await apiServices.CheckLoginAsync(123, "Shuhrat", "123");
-            //var isValidUser = await apiServices.CheckLoginAsync(20241, "test", "@#4050302Bb");
+            //var isValidUser = await apiServices.CheckLoginAsync(123, "Shuhrat", "123");
+            var isValidUser = await apiServices.CheckLoginAsync(20241, "test", "@#4050302Bb");
             MessageBox.Show(isValidUser.ToString(), "Response:");
-            if (isValidUser || true)
+            if (isValidUser)
             {
                 Thread.CurrentPrincipal = new GenericPrincipal(
                     new GenericIdentity(Username), null);

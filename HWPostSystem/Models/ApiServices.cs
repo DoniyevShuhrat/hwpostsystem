@@ -5,16 +5,19 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace HWPostSystem.Models
 {
     public class ApiServices
     {
         private readonly HttpClient _httpClient;
-        private readonly string _baseUrl = "http://spos.loc/v1/";
+        private readonly string _baseUrl = "https://spos.uz/v1/";
         public ApiServices()
         {
             _httpClient = new HttpClient();
@@ -22,32 +25,29 @@ namespace HWPostSystem.Models
 
         public async Task<bool> CheckLoginAsync(int companyCode, string username, string password)
         {
-            Trace.WriteLine("Begin CheckLoginAsync");
-            
-            var address = "auth/login";
-            //var url = $"{_baseUrl}{address}?org={org}&login={login}&parol={parol}";
+            string address = "auth/login";
 
             var queryParams = new Dictionary<string, string> {
                 {"org", companyCode.ToString() },
                 { "login", username },
                 { "parol", password }
             };
-            //var loginData = new {}
+            var content = new FormUrlEncodedContent(queryParams);
+            var requestUri = _baseUrl + address;
 
-            //var response = await _httpClient.GetAsync(_httpClient.BaseAddress +);
-            string queryString = ToQueryString(queryParams);
-            string requestUri = _baseUrl + address + queryString;
-            Trace.WriteLine("Before  try");
             try
             {
-                HttpResponseMessage responseMessage = await _httpClient.GetAsync(requestUri);
+                Trace.WriteLine($"fullUrl: {requestUri}");
+                var responseMessage = await _httpClient.PostAsync(requestUri, content);
+
                 if (responseMessage.IsSuccessStatusCode)
                 {
-                    Trace.WriteLine("into response");
-                    // Handle the response here
                     string responseData = await responseMessage.Content.ReadAsStringAsync();
-                    MessageBox.Show(responseData, "responseData");
-                    // You can parse the responseData if needed
+                    Trace.WriteLine($"responseData: {responseData}");
+                    var responseDataJson = JObject.Parse(responseData); //JsonConvert.DeserializeObject<string>(responseData);
+                    //var responseDataJson = JsonConvert.DeserializeObject<string>(responseData);
+                    Trace.WriteLine($"responseDataJson: {responseDataJson}");
+
                     return true;
                 }
                 else
