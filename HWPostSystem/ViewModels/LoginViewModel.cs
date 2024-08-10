@@ -103,18 +103,21 @@ namespace HWPostSystem.ViewModels
             ApiServices apiServices = new ApiServices();
             //var isValidUser = await apiServices.CheckLoginAsync(123, "Shuhrat", "123");
             var isValidUser = await apiServices.CheckLoginAsync(20241, "test", "@#4050302Bb");
-            MessageBox.Show(isValidUser.ToString(), "Response:");
+
+            // Define roles
+            string[] roles = new string[] { "Admin", "User", "Manager" };
+
             if (isValidUser)
             {
                 Thread.CurrentPrincipal = new GenericPrincipal(
-                    new GenericIdentity(Username), null);
+                        new GenericIdentity(Username), roles);
+                        //new GenericIdentity(Username), null);
                 IsViewVisible = false;
             }
             else
             {
                 ErrorMessage = "* Invalid username or password";
             }
-            //var value = await apiServices.CheckLoginAsync(123, "Shuhrat", "");
             //throw new NotImplementedException();
         }
 

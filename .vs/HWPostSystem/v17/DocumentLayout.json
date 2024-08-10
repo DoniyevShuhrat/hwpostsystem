@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\models\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\models\\apiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\views\\loginview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -15,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\views\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|f:\\code\\c#\\wpf_c#_projects\\mvvmprojects\\hwpostsystem\\hwpostsystem\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB76BF-C611-4DE2-9F65-C8D7E906D800}|HWPostSystem\\HWPostSystem.csproj|solutionrelative:hwpostsystem\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 537,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +50,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "HWPostSystem\\Models\\UserModel.cs",
+              "ToolTip": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Models\\UserModel.cs",
+              "RelativeToolTip": "HWPostSystem\\Models\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:03:47.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\App.xaml.cs",
+              "RelativeDocumentMoniker": "HWPostSystem\\App.xaml.cs",
+              "ToolTip": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\App.xaml.cs",
+              "RelativeToolTip": "HWPostSystem\\App.xaml.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwBUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T15:09:13.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "HWPostSystem\\ViewModels\\LoginViewModel.cs",
               "ToolTip": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\ViewModels\\LoginViewModel.cs",
               "RelativeToolTip": "HWPostSystem\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAcwGoAAAAcAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAwGwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T18:05:38.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "LoginView.xaml",
               "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Views\\LoginView.xaml",
               "RelativeDocumentMoniker": "HWPostSystem\\Views\\LoginView.xaml",
@@ -67,7 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "HWPostSystem\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "HWPostSystem\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAjwCoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T14:51:23.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Views\\MainWindow.xaml",
               "RelativeDocumentMoniker": "HWPostSystem\\Views\\MainWindow.xaml",
@@ -75,19 +122,6 @@
               "RelativeToolTip": "HWPostSystem\\Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-29T17:42:40.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApiServices.cs",
-              "DocumentMoniker": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Models\\ApiServices.cs",
-              "RelativeDocumentMoniker": "HWPostSystem\\Models\\ApiServices.cs",
-              "ToolTip": "F:\\Code\\C#\\WPF_C#_Projects\\MVVMProjects\\HWPostSystem\\HWPostSystem\\Models\\ApiServices.cs",
-              "RelativeToolTip": "HWPostSystem\\Models\\ApiServices.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAswDAAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T17:40:02.222Z",
               "EditorCaption": ""
             }
           ]
